@@ -8,6 +8,10 @@ from database import (
     init_database,
 )
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 app = Flask(__name__, static_folder=".")
 CORS(app)
@@ -18,7 +22,7 @@ init_database()
 
 @app.route("/")
 def index():
-    return send_from_directory(".", "index.html")
+    return send_from_directory(BASE_DIR, "index.html")
 
 
 @app.route("/admin")
@@ -99,7 +103,7 @@ def admin():
 
 @app.route("/<path:path>")
 def serve_static(path):
-    return send_from_directory(".", path)
+    return send_from_directory(BASE_DIR, path)
 
 
 # API Routes
