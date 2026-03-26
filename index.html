@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Rama Priyan GS — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ============================================================
+       NAVIGATION
+    ============================================================ -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="#hero" class="nav-logo">SRP<span>.</span></a>
+
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" type="button"></button>
+            <button class="hamburger" id="hamburger" aria-label="Menu" type="button">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-menu-link">About</a>
+      <a href="#skills" class="mobile-menu-link">Skills</a>
+      <a href="#projects" class="mobile-menu-link">Projects</a>
+      <a href="#education" class="mobile-menu-link">Education</a>
+      <a href="#contact" class="mobile-menu-link">Contact</a>
+    </div>
+
+    <!-- ============================================================
+       HERO
+    ============================================================ -->
+    <section id="hero">
+      <div class="hero-grid"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+
+      <div class="container">
+        <div class="hero-inner">
+          <!-- Left: Content -->
+          <div class="hero-content">
+            <div class="hero-badge">Available for opportunities</div>
+
+            <h1 class="hero-name">
+              <span class="line-1">Sri Rama</span>
+              <span class="line-2">Priyan GS</span>
+            </h1>
+
+            <p class="hero-tagline">
+              Student &nbsp;·&nbsp; Future Data Analyst &nbsp;·&nbsp; Technology Enthusiast<br />
+              Passionate about transforming data into decisions and building elegant digital experiences.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#contact" class="btn-primary">
+                <span>✉</span>
+                <span>Contact Me</span>
+              </a>
+              <a href="#projects" class="btn-ghost">
+                <span>◈</span>
+                <span>View Projects</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Profile Visual -->
+          <div class="hero-visual">
+            <div class="profile-frame">
+              <div class="profile-img-wrap">
+                <div class="profile-placeholder" id="profilePlaceholder">👤</div>
+                <img id="profileImage" class="profile-image" src="assets/profile.jpg" alt="Profile photo" />
+                <p class="profile-placeholder-text">Add your photo at <span class="mono">assets/profile.jpg</span></p>
+              </div>
+
+              <!-- Floating stats -->
+              <div class="stat-bubble stat-bubble-1">
+                <div class="val">5+</div>
+                <div class="lbl">Projects</div>
+              </div>
+              <div class="stat-bubble stat-bubble-2">
+                <div class="val">CSA</div>
+                <div class="lbl">B.Sc. Degree</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scrollIndicator" role="button" tabindex="0" aria-label="Scroll to About">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+       ABOUT
+    ============================================================ -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Text side -->
+          <div>
+            <div class="section-label reveal">About Me</div>
+            <h2 class="section-title reveal reveal-delay-1">
+              Crafting <em>insights</em><br />from data & code
+            </h2>
+
+            <div class="about-text reveal reveal-delay-2">
+              <p>
+                Hello! I'm <strong>Sri Rama Priyan GS</strong>, a Computer Science Application student at Kristu Jayanti College
+                with a deep passion for data analytics, web development, and the intersection of technology with finance.
+              </p>
+              <p>
+                I thrive on building things — whether that's a beautifully designed website for a local business, an analytical
+                model to uncover market patterns, or a script that automates what was once tedious. I believe that
+                <strong>great technology should be both powerful and intuitive</strong>.
+              </p>
+              <p>
+                As a self-driven learner, I combine my academic foundation in computing with hands-on exploration in trading
+                and financial analytics — developing a rare blend of technical depth and financial literacy.
+              </p>
+            </div>
+
+            <div class="about-highlights reveal reveal-delay-3">
+              <div class="highlight-card">
+                <div class="icon">📊</div>
+                <h4>Data Analytics</h4>
+                <p>Turning raw numbers into meaningful stories and actionable insights.</p>
+              </div>
+              <div class="highlight-card">
+                <div class="icon">💻</div>
+                <h4>Web Design</h4>
+                <p>Building clean, responsive websites that look stunning on every screen.</p>
+              </div>
+              <div class="highlight-card">
+                <div class="icon">📈</div>
+                <h4>Finance & Trading</h4>
+                <p>Analysing markets, applying data-driven strategies to financial decisions.</p>
+              </div>
+              <div class="highlight-card">
+                <div class="icon">🐍</div>
+                <h4>Python & Code</h4>
+                <p>Scripting automation, data pipelines, and analysis tools with Python.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills quick side -->
+          <div class="reveal reveal-right reveal-delay-2">
+            <div class="section-label">Quick Skills</div>
+            <p class="quick-skills-intro">
+              A snapshot of the tools and domains I work with — always learning, always growing.
+            </p>
+
+            <div id="aboutSkillBars"><!-- filled by JS --></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+       SKILLS
+    ============================================================ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-label reveal">Expertise</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Skills & <em>Technologies</em>
+        </h2>
+        <p class="skills-intro reveal reveal-delay-2">
+          From frontend interfaces to data pipelines, here's my current tech stack and proficiency levels.
+        </p>
+
+        <div class="skills-layout">
+          <!-- Progress Bars -->
+          <div class="skills-bars" id="skillBars"></div>
+
+          <!-- Tech Pills -->
+          <div>
+            <p class="all-tech-label">All Technologies</p>
+            <div class="tech-grid" id="techPills"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+       PROJECTS
+    ============================================================ -->
+    <section id="projects">
+      <div class="container">
+        <div class="projects-header">
+          <div>
+            <div class="section-label reveal">Portfolio</div>
+            <h2 class="section-title reveal reveal-delay-1">Selected <em>Work</em></h2>
+          </div>
+          <p class="projects-sub reveal">
+            Real projects, real impact — built with care.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <div class="project-card card-1 reveal reveal-delay-1">
+            <div class="card-header">
+              <div class="card-header-inner"><span class="card-icon">🛒</span></div>
+              <span class="card-tag">Web Design</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Local Shop Website</h3>
+              <p class="card-desc">
+                Designed and developed a full responsive e-commerce style landing page for a local retail shop — featuring
+                product showcase, contact form, and Google Maps integration.
+              </p>
+              <div class="card-stack">
+                <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn-card btn-card-primary">View Live</a>
+                <a href="#" class="btn-card btn-card-ghost">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="project-card card-2 reveal reveal-delay-2">
+            <div class="card-header">
+              <div class="card-header-inner"><span class="card-icon">💼</span></div>
+              <span class="card-tag">Portfolio</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Portfolio Builder</h3>
+              <p class="card-desc">
+                A customisable portfolio template system built for freelancers and students — clean layout, dark mode, and
+                animated sections to make a memorable first impression.
+              </p>
+              <div class="card-stack">
+                <span class="stack-tag">HTML</span><span class="stack-tag">CSS Grid</span><span class="stack-tag">Animations</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn-card btn-card-primary">View Live</a>
+                <a href="#" class="btn-card btn-card-ghost">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="project-card card-3 reveal reveal-delay-3">
+            <div class="card-header">
+              <div class="card-header-inner"><span class="card-icon">📊</span></div>
+              <span class="card-tag">Data</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Stock Data Analyser</h3>
+              <p class="card-desc">
+                A Python-based tool that fetches historical stock data, computes moving averages and RSI indicators, and
+                visualises them with matplotlib charts for quick analysis.
+              </p>
+              <div class="card-stack">
+                <span class="stack-tag">Python</span><span class="stack-tag">Pandas</span><span class="stack-tag">Matplotlib</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn-card btn-card-primary">View Demo</a>
+                <a href="#" class="btn-card btn-card-ghost">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="project-card card-4 reveal reveal-delay-1">
+            <div class="card-header">
+              <div class="card-header-inner"><span class="card-icon">🍽️</span></div>
+              <span class="card-tag">Web Design</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Restaurant Landing Page</h3>
+              <p class="card-desc">
+                A visually rich landing page for a local restaurant — featuring the menu, opening hours, gallery, and an online
+                reservation form with form validation.
+              </p>
+              <div class="card-stack">
+                <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JS</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn-card btn-card-primary">View Live</a>
+                <a href="#" class="btn-card btn-card-ghost">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="project-card card-5 reveal reveal-delay-2">
+            <div class="card-header">
+              <div class="card-header-inner"><span class="card-icon">🤖</span></div>
+              <span class="card-tag">Automation</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Python Automation Scripts</h3>
+              <p class="card-desc">
+                A collection of Python utilities for automating repetitive tasks — file organiser, CSV data cleaner, web scraper,
+                and a simple expense tracker with reporting.
+              </p>
+              <div class="card-stack">
+                <span class="stack-tag">Python</span><span class="stack-tag">BeautifulSoup</span><span class="stack-tag">CSV</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn-card btn-card-primary">View Demo</a>
+                <a href="#" class="btn-card btn-card-ghost">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 — CTA -->
+          <div
+            class="project-card reveal reveal-delay-3"
+            style="border-style: dashed; display: flex; align-items: center; justify-content: center; min-height: 300px;"
+          >
+            <div style="text-align: center; padding: 2rem;">
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;">✦</div>
+              <div style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-secondary);">
+                More coming soon
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.5rem;">Currently working on new data & design projects.</p>
+              <a href="#contact" class="btn-ghost" style="font-size: 0.8rem; padding: 0.65rem 1.5rem;">Get in touch →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+       EDUCATION
+    ============================================================ -->
+    <section id="education">
+      <div class="container">
+        <div class="section-label reveal">Academic Background</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Education &<br /><em>Learning Path</em>
+        </h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 — Present</div>
+            <div class="timeline-card">
+              <div class="degree">Bachelor of Computer Science Application</div>
+              <div class="institution">Kristu Jayanti (Deemed to be University)</div>
+              <div class="detail">
+                Pursuing a comprehensive B.Sc. in Computer Science Application, covering programming fundamentals, data structures,
+                database management, software engineering, web technologies, and applied mathematics. Actively engaged in lab projects
+                and analytics coursework.
+              </div>
+              <div class="edu-badges">
+                <span class="edu-badge">Python</span>
+                <span class="edu-badge">Data Structures</span>
+                <span class="edu-badge">DBMS</span>
+                <span class="edu-badge">Web Technologies</span>
+                <span class="edu-badge">Statistics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021 — 2023</div>
+            <div class="timeline-card">
+              <div class="degree">Higher Secondary Education</div>
+              <div class="institution">State Board — Science Stream</div>
+              <div class="detail">
+                Completed higher secondary schooling with a focus on Mathematics, Physics, Chemistry, and Computer Science — building
+                a strong analytical foundation that continues to inform my problem-solving approach.
+              </div>
+              <div class="edu-badges">
+                <span class="edu-badge">Mathematics</span>
+                <span class="edu-badge">Computer Science</span>
+                <span class="edu-badge">Physics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Self-Directed</div>
+            <div class="timeline-card">
+              <div class="degree">Online Certifications & Courses</div>
+              <div class="institution">Coursera · Udemy · YouTube & More</div>
+              <div class="detail">
+                Supplementing formal education with self-paced online learning in data analysis, financial markets, web development,
+                and Python programming. Strong believer in continuous, curiosity-driven learning.
+              </div>
+              <div class="edu-badges">
+                <span class="edu-badge">Data Analysis</span>
+                <span class="edu-badge">Finance</span>
+                <span class="edu-badge">Trading</span>
+                <span class="edu-badge">SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+       CONTACT
+    ============================================================ -->
+    <section id="contact">
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="reveal reveal-left reveal-delay-2">
+          <h2 class="contact-heading">Get In Touch</h2>
+          <p class="contact-blurb">
+            Whether you have a project in mind, want to collaborate, or just want to say hello — my inbox is always open. I'd
+            love to connect and explore what we can build together.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:srirampriyan@email.com" class="contact-link">
+              <div class="link-icon">✉</div>
+              <div class="link-text">
+                <div class="link-label">Email</div>
+                <div class="link-val">srirampriyan@email.com</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="contact-link">
+              <div class="link-icon">in</div>
+              <div class="link-text">
+                <div class="link-label">LinkedIn</div>
+                <div class="link-val">Sri Rama Priyan GS</div>
+              </div>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" class="contact-link">
+              <div class="link-icon">⌥</div>
+              <div class="link-text">
+                <div class="link-label">GitHub</div>
+                <div class="link-val">github.com/srirampriyan</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="social-row">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="social-btn" title="LinkedIn">in</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" class="social-btn" title="GitHub">⌥</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" class="social-btn" title="Twitter">𝕏</a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-btn" title="Instagram">◎</a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="reveal reveal-right reveal-delay-3">
+          <div class="contact-form">
+            <div class="form-title">Send me a message</div>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Name</label>
+                  <input id="contactName" name="name" type="text" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email</label>
+                  <input id="contactEmail" name="email" type="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input id="contactSubject" name="subject" type="text" placeholder="What's this about?" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" placeholder="Tell me about your project or just say hello..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">Send Message →</button>
+            </form>
+
+            <div class="form-success" id="formSuccess">✓ &nbsp; Message sent! I'll get back to you soon.</div>
+            <div class="form-error" id="formError" role="alert"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+    ============================================================ -->
+    <footer>
+      <div class="container">
+        <p>
+          © 2024 <span>Sri Rama Priyan GS</span>. Designed & built with <span>♥</span> — All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
